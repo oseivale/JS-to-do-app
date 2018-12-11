@@ -20,6 +20,7 @@ function add_element_to_array()
  alert("Task: " + array[x] + " added.");
  x++;
  document.getElementById("text1").value = "";
+ document.getElementById("text2").value = "";
 
 }
 
@@ -39,9 +40,9 @@ function display_array(){
    for (var y=0; y<array.length; y++)
    {
 
-   	e = "<span>Task:</span> "+array[y] + item +"<br/>";
-     f = "<span>Description: </span>" +array2[y] + description+ "<br/>";
-     g = "<span>Category: </span>"+array3[y] + category +"<br/>";
+   	e = "<span>Task:</span> "+array[y] + item +"    ";
+     f = "<span>Description: </span>" +array2[y] + description+ "   ";
+     g = "<span>Category: </span>"+array3[y] + category +"    ";
 
    
      var newLine = node.innerHTML = e + f + g +"<br/><hr><br/>";
